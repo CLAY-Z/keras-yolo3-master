@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>803</width>
+    <height>609</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>施工现场危险行为监控系统v0.1</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QToolButton" name="toolButton_camera">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>110</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开摄像头</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_camera">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>110</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_image">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>160</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择图片</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_image">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>160</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_model">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>210</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择模型</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_model">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>210</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_start">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>80</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>运行</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_end">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>160</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>结束</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_show">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>420</width>
+      <height>280</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>420</width>
+      <height>280</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>420</width>
+      <height>280</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_result_2">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>320</y>
+      <width>171</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_useTime">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>240</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;所用时间：&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_time">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>240</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>0 s</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_scanResult">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>280</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;识别结果：&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_result">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>270</y>
+      <width>120</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 189, 189);</string>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_video">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择视频</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_video">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>60</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
